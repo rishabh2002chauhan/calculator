@@ -1,0 +1,84 @@
+body{
+    background-color: #202021;
+  }
+.container{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+}
+  .grid{
+    display: grid;
+    grid-template-column: 1fr 1fr 1fr 1fr;
+    grid-template-row: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "dis dis dis dis"
+      "allclear clear divide multiply"
+      "seven eight nine minus"
+      "four five six add"
+      "one two three equals"
+      "zero zero decimal equals";
+    border: 15px solid #f7f3d7;
+    border-radius: 15px;
+  }
+  .dis{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    /* padding-bottom: 5px; */
+    padding-right: 5px;
+  }
+  .padButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: grey;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: inherit;
+  }
+  .padButton:hover{
+    color: black;
+    border: 1px solid white;
+  }
+  .padButton:active{
+    background-color: #505152;
+    color: black;
+  }
+  .operator{
+    background-color: #505152;
+  }
+  .operator:active{
+    background-color: #353536;
+  }
+  .dis{
+    grid-area: dis;
+    text-align: right;
+  }
+  .allclear{
+    grid-area: allclear;
+    background-color: tomato;
+  }
+  .allclear:active{
+    background-color: #a1331d;
+  }
+  .clear{
+    background-color: tomato;
+  }
+  .clear:active{
+    background-color: #a1331d;
+  }
+  .equals{
+    grid-area: equals;
+    background-color: #3268a8;
+  }
+  .equals:active{
+    background-color: #1b3e7d;
+  }
+  .zero{
+    grid-area: zero;
+  }
